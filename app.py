@@ -17,7 +17,7 @@ def load_models():
     """Load pretrained models"""
     return (
         SARIMAXResults.load("assets/my_sarima_model.pkl"),
-        load_model("assets/my_lstm_model.h5"),
+        load_model("assets/my_lstm_model.h5", compile=False),
         joblib.load("assets/scaler.pkl")
     )
 
